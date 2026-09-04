@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PolyTrack Links</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #0f1115;
+    --card: #171a21;
+    --text: #f2f3f5;
+    --muted: #9aa1ac;
+    --accent: #6ee7b7;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f5f6f8;
+      --card: #ffffff;
+      --text: #14161a;
+      --muted: #5b6270;
+      --accent: #0f9d68;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin: 0 0 6px;
+    letter-spacing: -0.02em;
+  }
+  p.subtitle {
+    color: var(--muted);
+    margin: 0 0 32px;
+    text-align: center;
+  }
+  .list {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  a.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--card);
+    color: var(--text);
+    text-decoration: none;
+    padding: 16px 18px;
+    border-radius: 12px;
+    border: 1px solid rgba(128,128,128,0.15);
+    transition: transform 0.12s ease, border-color 0.12s ease;
+  }
+  a.card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+  }
+  .card .name { font-weight: 600; }
+  .card .desc { color: var(--muted); font-size: 0.85rem; display: block; margin-top: 2px; }
+  .card .arrow { color: var(--accent); font-size: 1.1rem; }
+  footer {
+    margin-top: 40px;
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+</style>
+</head>
+<body>
+  <h1>🏁 PolyTrack</h1>
+  <p class="subtitle">Low-poly time-trial racing, built by Kodub. Five places to play or explore it.</p>
+  <div class="list">
+    <a class="card" href="https://kodub.itch.io/polytrack" target="_blank" rel="noopener">
+      <span>
+        <span class="name">itch.io (official)</span>
+        <span class="desc">Kodub's own page for the game</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="card" href="https://polytrack.bitbucket.io/" target="_blank" rel="noopener">
+      <span>
+        <span class="name">polytrack.bitbucket.io</span>
+        <span class="desc">Direct web build, no wrapper site</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="card" href="https://poki.com/en/g/polytrack" target="_blank" rel="noopener">
+      <span>
+        <span class="name">Poki</span>
+        <span class="desc">Play free on Poki's arcade</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="card" href="https://www.snokido.com/game/polytrack" target="_blank" rel="noopener">
+      <span>
+        <span class="name">Snokido</span>
+        <span class="desc">Another free browser mirror</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="card" href="https://arcadino.com/game/polytrack/" target="_blank" rel="noopener">
+      <span>
+        <span class="name">Arcadino</span>
+        <span class="desc">Yet another place to play instantly</span>
+      </span>
+      <span class="arrow">→</span>
+    </a>
+  </div>
+  <footer>Deployed with Vercel · built for Soham</footer>
+</body>
+</html>
